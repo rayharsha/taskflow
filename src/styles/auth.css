@@ -1,0 +1,77 @@
+body{
+    margin: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f4f4;
+}
+
+.auth-container{
+    /* margin-top: 30px; */
+    /* height: 100px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.auth-card{
+    width: 350px;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.auth-card h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.auth-card input{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 35px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.auth-card button{
+    width: 100%;
+    padding: 10px;
+    background: #4f46e5;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.auth-card button:hover{
+    background: #3f3791;
+}
+
+.auth-link{
+    text-align: left;
+    margin-top: 16px;
+}
+.auth-link a{
+    text-decoration: none;
+    color: #4f46e5;
+    font-size: 14px;
+}
+.auth-link a:hover{
+    color: firebrickc;
+}
+.spinner{
+    border: 3px solid #f3f3f3;
+    border-top: 3px solid #3498db;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    animation: apin 1s linear infinite;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+@keyframes spin {
+    0%{transform:rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
