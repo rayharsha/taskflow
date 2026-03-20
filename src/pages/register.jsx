@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import "../styles/auth.css"
 import useRegister from '../lib/hooks/useRegister';
+import { Link } from 'react-router-dom';
 const Register = () => {
     const [credentials, setCredentials] = useState({
         name: "",
@@ -55,6 +56,9 @@ const Register = () => {
                             <div className='spinner'></div> : "register"}
                     </button>
                 </form>
+                <p>Alredy have an account?{" "}
+                    <Link to="/">Login</Link>
+                </p>
             </div>
         </div>
     )

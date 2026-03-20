@@ -37,7 +37,7 @@ const VerifyEmail = () => {
                 <h2>Verifying your email...</h2>
                 {!isVerified ? (
                     <>
-                        <p>clicl the button below to verify your email address.</p>
+                        <p>click the button below to verify your email address.</p>
                         <button onClick={handleVerify} disabled={isVerifying}>
                             {isVerifying ? "Verifying.." : "verify email"}
                         </button>

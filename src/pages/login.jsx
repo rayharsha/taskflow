@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import "../styles/auth.css"
+import { Link } from 'react-router-dom';
 import useLogin from '../lib/hooks/useLogin';
 
 const Login = () => {
@@ -43,6 +44,9 @@ const Login = () => {
                 </form>
                 <div className='auth-link'>
                     <a href="/forgetpassword">Forget Password?</a>
+                    <p>Don't have an account?{" "}
+                        <Link to="/register">Create account</Link>
+                    </p>
                 </div>
             </div>
         </div>
