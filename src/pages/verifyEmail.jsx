@@ -21,7 +21,7 @@ const VerifyEmail = () => {
             toast.success(response.message || "Email verified successfully");
             setIsVerified(true)
             setTimeout(() => {
-                navigate("/login");
+                navigate("/");
             }, 2000);
 
         } catch (error) {

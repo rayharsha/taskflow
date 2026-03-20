@@ -8,7 +8,7 @@ export const AuthProvider = ({ children }) => {
     useEffect(() => {
         if (!isAuthenticated) {
             setTimeout(() => {
-                window.location.href = `${import.meta.env.VITE_APP_BASE_URL}/login`;
+                window.location.href = `${import.meta.env.VITE_APP_URL}/`;
             }, 1000);
         }
     }, [isAuthenticated]);
