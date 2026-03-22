@@ -9,7 +9,8 @@ class AppHTTPService {
 
     #initiate(isMultipartRequest) {
         this.instance = axios.create({
-            baseURL: `${import.meta.env.VITE_BACKEND_BASE_URL}`,
+            baseURL: `${import.meta.env.VITE_API_URL}`,
+           
             timeout: 180000,
             headers: {
                 Accept: "application/json",
@@ -35,7 +36,7 @@ class AppHTTPService {
         this.instance.interceptors.response.use(response => response, error => {
             if (error.response && error.response.status === 401) {
                 localStorage.removeItem("token");
-                window.location.href = "/";
+                window.location.href = "/login";
             }
             return Promise.reject(error)
         });

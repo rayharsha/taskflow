@@ -14,12 +14,12 @@ function App() {
        <div>
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<Login />} />
+          <Route path='/login' element={<Login />} />
           <Route path='/register' element={<Register />} />
           <Route path='/auth/verify-email/:token' element={<VerifyEmail />} />
           <Route path='/forgetpassword' element={<ForgetPassword />} />
           <Route path='/reset-password/:token' element={<ResetPassword />} />
-          <Route path='/todos' element={<AuthProvider><Todo /></AuthProvider>} />
+          <Route path='/' element={<AuthProvider><Todo /></AuthProvider>} />
         </Routes>
       </BrowserRouter>
       <ToastContainer />
