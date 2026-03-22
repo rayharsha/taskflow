@@ -12,7 +12,6 @@ const Login = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // console.log(credentials);
         login(credentials.email, credentials.password);
     }
     return (
